@@ -1,0 +1,17 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "INSERT INTO file_chunks (file_id, chunk_index, chunk_data, file_extension) VALUES ($1, $2, $3, $4)",
+  "describe": {
+    "columns": [],
+    "parameters": {
+      "Left": [
+        "Uuid",
+        "Int4",
+        "Bytea",
+        "Varchar"
+      ]
+    },
+    "nullable": []
+  },
+  "hash": "34d909b918a726e7be7d969de2cc94645fbe07ed203a948f3fef40e1fdea51c6"
+}

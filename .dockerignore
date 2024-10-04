@@ -1,0 +1,10 @@
+target/
+Dockerfile
+.dockerignore
+.git
+.gitignore
+
+# NOT IGNORED
+
+!migrations/
+!start.sh

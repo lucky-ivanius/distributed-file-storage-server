@@ -1,0 +1,28 @@
+{
+  "db_name": "PostgreSQL",
+  "query": "\n        SELECT file_extension, COUNT(*) as chunk_count\n        FROM file_chunks\n        WHERE file_id = $1\n        GROUP BY file_extension\n        ",
+  "describe": {
+    "columns": [
+      {
+        "ordinal": 0,
+        "name": "file_extension",
+        "type_info": "Varchar"
+      },
+      {
+        "ordinal": 1,
+        "name": "chunk_count",
+        "type_info": "Int8"
+      }
+    ],
+    "parameters": {
+      "Left": [
+        "Uuid"
+      ]
+    },
+    "nullable": [
+      false,
+      null
+    ]
+  },
+  "hash": "5ec80b1e1708108eadf469d1292ef1f7bef560849826664660041485e7a3771c"
+}
